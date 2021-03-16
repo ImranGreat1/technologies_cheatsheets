@@ -144,6 +144,49 @@ But it won't delete the changes from your repository. So you might want to recom
     git reset commitID --hard
 ~~~
 
+## Working Remotely using github
+
+### Pushing to a remote repository
+*In this example we assume we are pushing it to the remote master branch*
+~~~bash
+    git push https://github.com/path/to/repoUrl master
+~~~
+
+### Adding alias to a remote repository url
+*This will make it easier for us to use the alias intead of always using the long repository url. To push code now we'll use "git push origin master" origin is the name of the alias*
+~~~bash
+    git remote add origin https://github.com/path/to/repoUrl
+~~~
+
+
+## Using Github
+Github is a remote hosting service for our repository
+
+
+### Description on how we collaborate on github
+Let say you are working in a team and your project that you are working on is hosted on github. If you want to add a new feature to the project you are working on you'll usually use the steps below
+
+* Create a new branch and move into it so that you can work on your new feature in an isolated branch so that you do not modify the master branch directly.
+
+* After you are done with the new feature, you then commit the changes in that new branch.
+
+* Push the new feature to the remote repository but NOT in the master branch of the remote repository but in a new branch usually name the same as the new branch you are working on. We do that by running the command
+```bash
+    git push origin new-feature
+```
+
+* The above command will create a branch named new-feature in the remote repository and then push to it. If the branch is already created, it will just push to it.
+
+* In our github page we'll be notified that a new branch has been added to the repository and it will shows us the option to compare and then pull the new branch to the master branch.
+
+* If we click the compare and pull option, we'll be take to a page where we can see the changes that was made, we can add comment and reviews. We can also then a merge request, this merge request will notify the developers working on that repository, they will then check the changes and send comment if they have any.
+
+* You can then add the developers who you want to review your code.
+
+*
+
+
+
 
 
 
