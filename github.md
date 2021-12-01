@@ -183,7 +183,6 @@ Let say you are working in a team and your project that you are working on is ho
 
 * You can then add the developers who you want to review your code.
 
-*
 
 
 
