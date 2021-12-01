@@ -13,13 +13,13 @@
 ## Queries
 
 **Find all documents in a collection**
-__This will return an array of all the documents in the collection__
+_This will return an array of all the documents in the collection_
 ~~~bash
     db.collectionName.find()
 ~~~
 
 **Find all documents in a collection**
-__This will return an array of all matched documents in the collection__
+_This will return an array of all matched documents in the collection_
 ~~~bash
     db.collectionName.find(queryObject)
 ~~~
