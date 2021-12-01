@@ -1,8 +1,25 @@
-# Creating Document
+## Creating Document
 
-**Creating singl document**
+**Creating single document**
 ~~~bash
     db.collectionName.insertOne(documentObject)
 ~~~
 
-# Queries
+**Creating multiple documents at once**
+~~~bash
+    db.collectionName.insertMany(arrayOfDocumentsObject)
+~~~
+
+## Queries
+
+**Find all documents in a collection**
+__This will return an array of all the documents in the collection__
+~~~bash
+    db.collectionName.find()
+~~~
+
+**Find all documents in a collection**
+__This will return an array of all matched documents in the collection__
+~~~bash
+    db.collectionName.find(queryObject)
+~~~
